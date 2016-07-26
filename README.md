@@ -12,7 +12,7 @@ thing! https://github.com/PolymerLabs/tedium/issues
 
 -->
 
-[![Build status](https://travis-ci.org/PolymerElements/iron-movable-container.svg?branch=master)](https://travis-ci.org/PolymerElements/iron-movable-container)
+```[![Build status](https://travis-ci.org/PolymerElements/iron-movable-container.svg?branch=master)](https://travis-ci.org/PolymerElements/iron-movable-container)```
 
 _[Demo and API docs](https://elements.polymer-project.org/elements/iron-movable-container)_
 
