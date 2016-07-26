@@ -11,31 +11,31 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../polymer/polymer.html">
 
 <!--
-`<iron-swipeable-container>` is a container that allows any of its nested
+`<iron-movable-container>` is a container that allows any of its nested
 children (native or custom elements) to be swiped away. By default it supports
 a curved or horizontal transition, but the transition duration and properties
 can be customized.
 
 Example:
 
-    <iron-swipeable-container>
+    <iron-movable-container>
       <div>I can be swiped</div>
       <paper-card heading="Me too!"></paper-card>
-    </iron-swipeable-container>
+    </iron-movable-container>
 
 To disable swiping on individual children, you must give them the `.disable-swipe`
 class. Alternatively, to disable swiping on the whole container, you can use its
 `disable-swipe` attribute:
 
-    <iron-swipeable-container>
+    <iron-movable-container>
       <div class="disable-swipe">I cannot be swiped be swiped</div>
       <paper-card heading="But I can!"></paper-card>
-    </iron-swipeable-container>
+    </iron-movable-container>
 
-    <iron-swipeable-container disable-swipe>
+    <iron-movable-container disable-swipe>
       <div>I cannot be swiped</div>
       <paper-card heading="Me neither :("></paper-card>
-    </iron-swipeable-container>
+    </iron-movable-container>
 
 It is a good idea to disable text selection on any of the children that you
 want to be swiped:
@@ -49,11 +49,11 @@ want to be swiped:
     }
 
 @group Iron Elements
-@element iron-swipeable-container
+@element iron-movable-container
 @demo demo/index.html
 -->
 
-<dom-module id="iron-swipeable-container">
+<dom-module id="iron-movable-container">
   <template>
     <style>
       :host {
@@ -67,7 +67,7 @@ want to be swiped:
 <script>
 
   Polymer({
-    is: 'iron-swipeable-container',
+    is: 'iron-movable-container',
 
     /**
      * Fired when a child element is swiped away.

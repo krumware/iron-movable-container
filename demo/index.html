@@ -10,14 +10,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 <html lang="en">
 <head>
-  <title>iron-swipeable-container demo</title>
+  <title>iron-movable-container demo</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
 
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
-  <link rel="import" href="../iron-swipeable-container.html">
+  <link rel="import" href="../iron-movable-container.html">
   <link rel="import" href="../../paper-card/paper-card.html">
   <link rel="import" href="../../paper-styles/demo-pages.html">
   <link rel="import" href="../../paper-styles/color.html">
@@ -54,7 +54,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <div class="vertical-section-container centered">
     <h4>Horizontal swipe</h4>
     <div class="vertical-section">
-      <iron-swipeable-container>
+      <iron-movable-container>
         <div class="item swipe">You can swipe native elements. This is a plain div.</div>
 
         <paper-card class="swipe" heading="Swipe me!">
@@ -70,12 +70,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </paper-card>
 
         <div class="item blue disable-swipe">This is another div but it can't be swiped.</div>
-      </iron-swipeable-container>
+      </iron-movable-container>
     </div>
 
     <h4>Curve swipe</h4>
     <div class="vertical-section">
-      <iron-swipeable-container swipe-style="curve">
+      <iron-movable-container swipe-style="curve">
         <div class="item swipe">You can swipe native elements. This is a plain div.</div>
 
         <paper-card class="swipe" heading="Swipe me!">
@@ -91,12 +91,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </paper-card>
 
         <div class="item blue disable-swipe">This is another div but it can't be swiped.</div>
-      </iron-swipeable-container>
+      </iron-movable-container>
     </div>
 
     <h4>Swipe disabled</h4>
     <div class="vertical-section">
-      <iron-swipeable-container disabled>
+      <iron-movable-container disabled>
         <div class="item swipe">You can swipe native elements. This is a plain div.</div>
 
         <paper-card class="swipe" heading="Swipe me!">
@@ -112,7 +112,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </paper-card>
 
         <div class="item blue">This is another div.</div>
-      </iron-swipeable-container>
+      </iron-movable-container>
     </div>
   </div>
 </body>
