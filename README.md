@@ -5,6 +5,7 @@
 
 ```_[Demo and API docs](https://thislinkwontwork)_```
 
+# This project was modified from the existing iron-swipeable-container project
 
 ##&lt;iron-movable-container&gt;
 
