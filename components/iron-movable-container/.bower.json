@@ -1,0 +1,46 @@
+{
+  "name": "iron-movable-container",
+  "description": "A container that is movable by dragging child element (anchor)",
+  "authors": [
+    "Colin Griffin"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "swipe",
+    "swipeable",
+    "drag",
+    "movable"
+  ],
+  "main": "iron-movable-container.html",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/krumware/iron-movable-container.git"
+  },
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/krumware/iron-movable-container",
+  "ignore": [],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+    "web-component-tester": "^4.0.0",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-test-helpers": "PolymerElements/iron-test-helpers#^1.0.0",
+    "paper-card": "PolymerElements/paper-card#^1.0.0",
+    "paper-styles": "PolymerElements/paper-styles#^1.0.0"
+  },
+  "_release": "02707c7171",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "02707c71718181eb79a35beca353ab004eb22a54"
+  },
+  "_source": "git://github.com/krumware/iron-movable-container.git",
+  "_target": "master",
+  "_originalSource": "krumware/iron-movable-container",
+  "_direct": true
+}
