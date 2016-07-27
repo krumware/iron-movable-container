@@ -7,6 +7,17 @@
 
 # This project was modified from the existing iron-swipeable-container project
 
+to install:
+`bower install --save krumware/iron-movable-container`
+
+Feel free to contribute!
+
+Plans for this project:
+  - Handle parent element bounds
+  - Provide "sticky/snap" options
+  - Allow resizing
+  - Develop paper/material component
+
 ##&lt;iron-movable-container&gt;
 
 `<iron-movable-container>` is a container that allows any of its nested
