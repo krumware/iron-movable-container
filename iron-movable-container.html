@@ -12,40 +12,47 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!--
 `<iron-movable-container>` is a container that allows any of its nested
-children (native or custom elements) to be swiped away. By default it supports
-a curved or horizontal transition, but the transition duration and properties
-can be customized.
+children (native or custom elements) to be anchor elements, that can be dragged to move the element.
 
 Example:
 
+    <style>
+      .toolbar {
+        @apply(layout-fixed-top);
+        @apply(layout-flex);
+        height:20px;
+        background-color:green;
+      }
+    </style>
     <iron-movable-container>
-      <div>I can be swiped</div>
-      <paper-card heading="Me too!"></paper-card>
+      <div class="drag-anchor toolbar">I can be dragged</div>
+      <paper-card heading="I'm just tagging along"></paper-card>
     </iron-movable-container>
 
-To disable swiping on individual children, you must give them the `.disable-swipe`
-class. Alternatively, to disable swiping on the whole container, you can use its
-`disable-swipe` attribute:
+Alternatively, to disable the drag, used the `disabled` attribute.
 
-    <iron-movable-container>
-      <div class="disable-swipe">I cannot be swiped be dragged</div>
-      <paper-card heading="But I can!"></paper-card>
-    </iron-movable-container>
-
-    <iron-movable-container disable-swipe>
-      <div>I cannot be dragged</div>
-      <paper-card heading="Me neither :("></paper-card>
+    <style>
+      .toolbar {
+        @apply(layout-fixed-top);
+        @apply(layout-flex);
+        height:20px;
+        background-color:green;
+      }
+    </style>
+    <iron-movable-container disabled>
+      <div class="drag-anchor toolbar">I can be dragged</div>
+      <paper-card heading="I'm just tagging along"></paper-card>
     </iron-movable-container>
 
 It is a good idea to disable text selection on any of the children that you
-want to be swiped:
+want to be draggable:
 
-    .swipe {
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -webkit-user-select: none;
-      user-select: none;
-      cursor: default;
+    .drag-anchor {
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: move;
     }
 
 @group Iron Elements
@@ -70,12 +77,6 @@ want to be swiped:
   Polymer({
     is: 'iron-movable-container',
 
-    /**
-     * Fired when a child element is swiped away.
-     *
-     * @event iron-swipe
-     */
-
     properties: {
 
       /**
@@ -87,7 +88,7 @@ want to be swiped:
       },
 
       /**
-       * The CSS transition applied while swiping.
+       * The CSS transition applied while dragging.
        */
       transition: {
         type: String,
@@ -182,6 +183,7 @@ want to be swiped:
 
       var translate, rotate;
 
+      //leaving for future reference
       //translate = 'translate3d(' + x + 'px,' + y + 'px,0)';
       //console.log(translate);
       //rotate = ' rotate(' + deg + 'deg)';
