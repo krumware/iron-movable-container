@@ -1,7 +1,7 @@
 
 
 
-```[![Build status](https://travis-ci.org/PolymerElements/iron-movable-container.svg?branch=master)](https://travis-ci.org/PolymerElements/iron-movable-container)```
+```[![Build status](https://updatelater/iron-movable-container.svg?branch=master)](https://updatelater/iron-movable-container)```
 
 ```_[Demo and API docs](https://thislinkwontwork)_```
 
