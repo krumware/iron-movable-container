@@ -28,90 +28,40 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       margin-bottom: 16px;
     }
 
-    .item {
-      margin-bottom: 16px;
-      padding: 20px;
-      background-color: var(--paper-lime-500);
-    }
-
-    .item.blue {
-      background-color: var(--paper-blue-300);
+    .toolbar {
+      @apply(layout-fixed-top);
+      @apply(layout-flex);
+      height:20px;
+      background-color:green;
     }
 
     /* If you want your things to swipe nicely, you might want to disable
      * text selection on those elements. */
-    .swipe {
+    .drag-anchor {
       -moz-user-select: none;
       -ms-user-select: none;
       -webkit-user-select: none;
       user-select: none;
-      cursor: default;
+      cursor: move;
     }
   </style>
 
 </head>
 <body unresolved>
   <div class="vertical-section-container centered">
-    <h4>Horizontal swipe</h4>
+    <h4>Draggable toolbar</h4>
     <div class="vertical-section">
       <iron-movable-container>
-        <div class="item swipe">You can swipe native elements. This is a plain div.</div>
-
-        <paper-card class="swipe" heading="Swipe me!">
-          <div class="card-content">
-            You can automatically swipe custom elements, too. This is a paper-card.
-          </div>
-        </paper-card>
-
-        <paper-card class="swipe">
-          <div class="card-content">
-            This is another paper-card. Hello!
-          </div>
-        </paper-card>
-
-        <div class="item blue disable-swipe">This is another div but it can't be swiped.</div>
+        <div class="drag-anchor toolbar">I can be dragged</div>
+        <paper-card heading="I'm just tagging along"></paper-card>
       </iron-movable-container>
     </div>
 
-    <h4>Curve swipe</h4>
-    <div class="vertical-section">
-      <iron-movable-container swipe-style="curve">
-        <div class="item swipe">You can swipe native elements. This is a plain div.</div>
-
-        <paper-card class="swipe" heading="Swipe me!">
-          <div class="card-content">
-            You can automatically swipe custom elements, too. This is a paper-card.
-          </div>
-        </paper-card>
-
-        <paper-card class="swipe">
-          <div class="card-content">
-            This is another paper-card. Hello!
-          </div>
-        </paper-card>
-
-        <div class="item blue disable-swipe">This is another div but it can't be swiped.</div>
-      </iron-movable-container>
-    </div>
-
-    <h4>Swipe disabled</h4>
+    <h4>Drag disabled</h4>
     <div class="vertical-section">
       <iron-movable-container disabled>
-        <div class="item swipe">You can swipe native elements. This is a plain div.</div>
-
-        <paper-card class="swipe" heading="Swipe me!">
-          <div class="card-content">
-            You can automatically swipe custom elements, too. This is a paper-card.
-          </div>
-        </paper-card>
-
-        <paper-card class="swipe">
-          <div class="card-content">
-            This is another paper-card. Hello!
-          </div>
-        </paper-card>
-
-        <div class="item blue">This is another div.</div>
+        <div class="drag-anchor toolbar">I can't be dragged</div>
+        <paper-card heading="I'm just tagging along"></paper-card>
       </iron-movable-container>
     </div>
   </div>
