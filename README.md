@@ -14,7 +14,7 @@ Feel free to contribute!
 
 Plans for this project:
   - Handle parent element bounds
-  - Provide "sticky/snap" options
+  - Provide "sticky/snap"
   - Allow resizing
   - Develop paper/material component
 
@@ -61,7 +61,7 @@ It is a good idea to disable text selection on any of the children that you
 want to be draggable:
 
 ```css
-.swipe {
+.drag-anchor {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;

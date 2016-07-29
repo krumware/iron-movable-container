@@ -1,15 +1,14 @@
 {
   "name": "iron-movable-container",
   "version": "0.0.1",
-  "description": "A container that is movable by dragging child element (anchor)",
+  "description": "A container that is movable by dragging a child element (anchor)",
   "authors": [
     "Colin Griffin"
   ],
   "keywords": [
     "web-components",
     "polymer",
-    "swipe",
-    "swipeable",
+    "draggable",
     "drag",
     "movable"
   ],
