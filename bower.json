@@ -13,7 +13,6 @@
     "movable"
   ],
   "main": "iron-movable-container.html",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/krumware/iron-movable-container.git"
