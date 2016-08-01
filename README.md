@@ -1,5 +1,5 @@
 
-
+[Demo and API docs](https://krumware.github.io/iron-movable-container/)
 
 ```[![Build status](https://updatelater/iron-movable-container.svg?branch=master)](https://updatelater/iron-movable-container)```
 
